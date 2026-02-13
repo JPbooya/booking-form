@@ -23,7 +23,7 @@ form.addEventListener('submit', (event) => {
     isValid = false;
   }
 
-  if (numTravel.trim() === '') {
+  if (numTravel.trim() === '' || parseInt(numTravel) === 0) {
     document.getElementById("err-travel").style.display = "inline";
     isValid = false;
   }
