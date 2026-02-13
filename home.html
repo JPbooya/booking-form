@@ -18,12 +18,10 @@
 
         <form id="booking-form" action="/" method="get">
 
-        
-
           <!-- Questionaires -->
           <div class="destination"> 
            <label for="meet">Destination<br><span id="err-desitnation" class=" err"> *Please select an option* </span></label>
-           <select id="destination" name="destination" onclick="otherSelected()">
+           <select id="destination" name="destination">
             <option value="none">Choose a destination...</option>
             <option value="bali">Bali, Indonesia</option>
             <option value="parizs">Paris, France</option>
@@ -45,14 +43,13 @@
             <input type="number" id="numtravel" name="numtravel" min="1" max="20">
           </div>
 
-
           <!-- Submit button -->
           <div class="full-width">
             <button type="submit" id="order-button" class="submit-btn">Find My Vacation</button>
           </div>
-
         </form>
       </div>
+
         <!-- Footer -->
       <footer>
         <p>GitHub URL: <a href="https://github.com/JPbooya/contact-form.git" target="_blank">https://github.com/JPbooya/contact-form.git</a></p>
