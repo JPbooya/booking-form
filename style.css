@@ -5,7 +5,7 @@ main {
 
 .booking-header {
   grid-column: 1 / -1;
-  background-image: url('vacation-img.jpeg');
+  background-image: url('http://bit.ly/305-vacation');
   background-size: cover;
   background-position: center;
   min-height: 200px;
