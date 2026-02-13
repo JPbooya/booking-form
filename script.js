@@ -8,7 +8,7 @@ form.addEventListener('submit', (event) => {
   const date = document.getElementById("datename").value;
   const numTravel = document.getElementById("numtravel").value;
 
-  // clears error 
+  // clears all error message before each submission 
   document.getElementById("err-desitnation").style.display = "none";
   document.getElementById("err-date").style.display = "none";
   document.getElementById("err-travel").style.display = "none";
