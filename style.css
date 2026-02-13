@@ -1,0 +1,122 @@
+main {
+  background-color: rgb(45, 26, 214);
+  padding: 20px;
+}
+
+.booking-header {
+  grid-column: 1 / -1;
+  background-image: url('vacation-img.jpeg');
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-header h1 {
+  color: white;
+  font-size: 60px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: black;
+}
+
+span {
+  font-weight: bold;
+  color: black;
+}
+#booking-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.destination {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.destination select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.date {
+  grid-column: 1 / 2;
+}
+
+.date input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.travel input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.travel {
+  grid-column: 2 /3;
+}
+.container {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container input, .container select {
+  border-radius: 5%;
+  border: lightgray;
+  color: black;
+  padding: 15px 15px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color:  rgb(45, 26, 214);
+  color: white;
+  padding: 15px 40px;
+  width: 30%;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+/* for mobile screen */
+@media (max-width: 600px) {
+  #booking-form {
+    grid-template-columns: 1fr;
+  }
+  .date, .travel {
+    grid-column: 1 / -1;
+  }
+}
+
+.err {
+  display: none;
+  color: red;
+}
+
+

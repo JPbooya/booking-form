@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boooking Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://www.shutterstock.com/image-vector/booked-reservation-confirmed-badge-icon-260nw-2684142421.jpg">
+  <script src="script.js" defer></script> 
+</head>
+<body>
+  <main>
+
+      <div class="container">
+        <header class="booking-header">
+          <h1>Book Your Dream Vacation</h1>
+        </header>
+
+        <form id="booking-form" action="/" method="get">
+
+        
+
+          <!-- Questionaires -->
+          <div class="destination"> 
+           <label for="meet">Destination<br><span id="err-desitnation" class=" err"> *Please select an option* </span></label>
+           <select id="destination" name="destination" onclick="otherSelected()">
+            <option value="none">Choose a destination...</option>
+            <option value="bali">Bali, Indonesia</option>
+            <option value="parizs">Paris, France</option>
+            <option value="tokyo">Tokyo, Japan</option>
+            <option value="maldives">Maldives</option>
+            <option value="new-york">New York City, USA</option>
+           </select>
+          </div>
+
+          <!-- date -->
+          <div class="date">
+            <label for="date-depart">Departure Date<br><span id="err-date" class="err"> *Please select a date* </span></label>
+            <input type="date" id="datename" name="datename">
+          </div>
+
+          <!-- travel -->
+          <div class="travel">
+            <label for="num-travels">Number of Travels<br><span id="err-travel" class="err"> *Must be greater than 0*</span></label>
+            <input type="number" id="numtravel" name="numtravel" min="1" max="20">
+          </div>
+
+
+          <!-- Submit button -->
+          <div class="full-width">
+            <button type="submit" id="order-button" class="submit-btn">Find My Vacation</button>
+          </div>
+
+        </form>
+      </div>
+        <!-- Footer -->
+      <footer>
+        <p>GitHub URL: <a href="https://github.com/JPbooya/contact-form.git" target="_blank">https://github.com/JPbooya/contact-form.git</a></p>
+      </footer>
+
+    </main>
+  </body>
+</html>

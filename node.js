@@ -1,0 +1,15 @@
+import express from 'express';
+const app = express();
+const PORT = 3000;
+
+app.use(express.static('hellow world'));
+
+app.use(express.static(import.meta.dirname));
+
+app.get('/', (req, res) => {
+  res.sendFile(`${import.meta.dirname}/home.html`);
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running at http://localhost:${PORT}`);
+});
