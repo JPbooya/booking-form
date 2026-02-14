@@ -7,7 +7,7 @@ app.use(express.static(import.meta.dirname));
 app.get('/', (req, res) => {
   res.sendFile(`${import.meta.dirname}/home.html`);
 });
-
+// confirmation route
 app.get('/confirmation', (req, res) => {
   res.sendFile(`${import.meta.dirname}/confirmation.html`)
 });

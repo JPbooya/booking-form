@@ -28,9 +28,10 @@ form.addEventListener('submit', (event) => {
     isValid = false;
   }
 
+  // if form is valid, take user too confirmation.html
   if (isValid) {
     console.log("Form submitted");
-    form.submit();
+    window.location.href = '/confirmation';
   }
 
 });
